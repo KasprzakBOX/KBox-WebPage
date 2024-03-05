@@ -1,0 +1,292 @@
+@font-face {
+    font-family: 'fixedsys';
+    src: url(fonts/Fixedsys.ttf);
+}
+
+/* Global settings */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'fixedsys';
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: hsl(195, 100%, 50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hamburger-button {
+    background-color: hsl(203, 100%, 50%);
+    color: white;
+    padding: 12px;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 10px;
+ }
+ 
+ .english-flag, .polish-flag {
+    margin-top: 15px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid #555; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+.nav-links {
+    display: none;
+    background-color: hsl(203, 100%, 50%);
+    position: absolute;
+    right: 10px;
+    padding-top: 10px;
+ }
+ 
+ .nav-links a {
+    display: grid;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 20px;
+ }
+
+ .nav-links a:hover {
+    background-color: hsl(200, 100%, 50%);
+ }
+ 
+
+.logo {
+    width: 75px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 130px;
+}
+
+/* Text upon fields */
+form label {
+    color: black;
+    font-size: 80px;
+}
+
+/* Styling entries fields */
+form input[type="tel"] {
+    margin-top: 2px;
+    border: 3px solid hsl(203, 100%, 50%);
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    font-size: 55px;
+}
+
+form input[type="tel"]:hover {
+    border: 4px solid black;
+}
+
+/* Submit button - container*/
+.submit-container {
+    display: flex;
+    justify-content: right;
+}
+
+/* Submit button */
+form input[type="submit"] {
+    padding: 12px;
+    margin-top: 10px;
+    background-color: hsl(203, 100%, 50%);
+    border-radius: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+form input[type="submit"]:hover {
+    background-color: hsl(203, 100%, 70%);
+    border-color: black;
+    color: white;
+}
+
+input[type="tel"]:hover,
+input[type="tel"]:focus {
+    background-color: #D6E4FA;
+}
+
+form {
+    justify-content: center;
+    align-items: center;
+    margin: 45px 20px 45px 5px;
+}
+
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 8px;
+    margin: 20px 10px 20px 20px;
+}
+
+.keyboard button:nth-child(11) {
+    grid-column: span 2;
+}
+
+.keyboard button:nth-child(11) {
+    font-size: 50px;
+}
+
+.keyboard button {
+    padding: 20px 20px;
+    font-size: 70px;
+    background-color: #f0f0f0;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.keyboard button:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    background-color: #00BFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.clock {
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+.kasprzak-logo {
+    justify-content: left;
+    width: 75px;
+    height: 75px;
+    margin: 0 0 0 20px;
+}
+
+.languages-container {
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0 0 0;
+}
+
+.polish_button {
+    border: 5px outset hsl(195, 100%, 50%);
+    border-radius: 5px;
+}
+
+.english_button {
+    border: 5px outset hsl(195, 100%, 50%);
+    border-radius: 5px;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 110px;
+}
+
+.choose {
+    margin: 130px 0 0 0;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 40px;
+}
+
+.choose h2 {
+    text-align: center;
+}
+
+.choose p {
+    font-size: 24px;
+}
+
+.choose-button {
+    flex-basis: max(30%, 250px);
+    margin-top: 50px;
+}
+
+.choose-button a {
+    display: grid;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+}
+
+.choose-button button {
+    cursor: pointer;
+    width: 100%;
+    font-size: 45px;
+    padding: 25px;
+}
+
+
+.about-us {
+    flex-basis: 30%;
+    justify-content: left;
+}
+
+
+@media (max-width: 520px) {
+    .form-container {
+        margin: 0px;
+    }
+
+    .form-container label {
+        font-size: 40px;
+    }
+
+    .submit-container {
+        justify-content: center;
+    }
+
+    .keyboard {
+        display: none;
+    }
+
+    .clock {
+        display: none;
+    }
+
+    .choose {
+        margin-top: 0px;
+        flex-direction: column;
+    }
+
+    .choose-button {
+        margin: 20px;
+        order: 0;
+    }
+
+    .about-us h2{
+        text-align: center;
+    }
+
+    .about-us {
+        margin: -10px 20px 20px 20px;
+        order: 1;
+        text-align: center;
+    }
+
+}

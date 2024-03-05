@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Collect the parcel - 📦</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="icon" href="images/kpost_main.png">
+</head>
+
+<body>
+    <header>
+        <a href="index-eng.html">
+            <img class="logo" src="images/kpost_main.png" alt="kbox logo">
+        </a>
+        <a href="odbierz.html">
+            <img class="polish-flag" src="images/polish_button.png" alt="Polish flag">
+        </a>
+
+        <a href="collect.html">
+            <img class="english-flag" src="images/english_button.png" alt="UK flag">
+        </a>
+
+        <div id="hamburger-menu">
+            <button class="hamburger-button"> ☰ </button>
+            <div class="nav-links">
+                <a href="index-eng.html">Home</a>
+                <a href="send.html">Send the parcel</a>
+                <a href="collect.html">Collect the parcel</a>
+                <script src="script.js"></script>
+            </div>
+        </div>
+    </header>
+    <div class="form-container">
+        <div class="keyboard">
+            <button type="button" onclick="addToInput('7')">7</button>
+            <button type="button" onclick="addToInput('8')">8</button>
+            <button type="button" onclick="addToInput('9')">9</button>
+            <button type="button" onclick="addToInput('4')">4</button>
+            <button type="button" onclick="addToInput('5')">5</button>
+            <button type="button" onclick="addToInput('6')">6</button>
+            <button type="button" onclick="addToInput('1')">1</button>
+            <button type="button" onclick="addToInput('2')">2</button>
+            <button type="button" onclick="addToInput('3')">3</button>
+            <button type="button" onclick="addToInput('0')">0</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+            <script src="script.js"></script>
+        </div>
+        <form>
+            <div>
+                <label for="phone_number">Phone number:<br></label>
+                <input type="tel" id="phone_number" name="phone_number" required minlength="9" maxlength="9" size="9">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="tracking_number">Package number:<br></label>
+                <input type="tel" id="tracking_number" name="tracking_number" required minlength="9" maxlength="9"
+                    size="9">
+            </div>
+
+            <div class="submit-container">
+                <input type="submit" value="submit" />
+            </div>
+        </form>
+    </div>
+    <footer>
+        <img class="kasprzak-logo" src="images/kasprzak-logo.jpg" alt="kasprzak-logo">
+        <div class="clock">
+            <h3 id="clockENG"></h3>
+            <script src="script.js"></script>
+        </div>
+    </footer>
+</body>
+
+</html>
