@@ -28,9 +28,12 @@ function updateZegar() {
     var today = new Date();
     var hours = today.getHours();
     var minutes = today.getMinutes();
-    if(minutes < 10) minutes = "0" + minutes;
     var seconds = today.getSeconds();
+
+    if(hours < 10) hours = "0" + hours;
+    if(minutes < 10) minutes = "0" + minutes;
     if(seconds < 10) seconds = "0" + seconds;
+
 
     var timeStringPL = "Warszawa | " + hours + ":" + minutes + ":" + seconds;
 
@@ -42,8 +45,10 @@ function updateClock() {
     var today = new Date();
     var hours = today.getHours();
     var minutes = today.getMinutes();
-    if(minutes < 10) minutes = "0" + minutes;
     var seconds = today.getSeconds();
+
+    if(hours < 10) minutes = "0" + hours;
+    if(minutes < 10) minutes = "0" + minutes;
     if(seconds < 10) seconds = "0" + seconds;
 
     var timeStringENG = "Warsaw | " + hours + ":" + minutes + ":" + seconds;
