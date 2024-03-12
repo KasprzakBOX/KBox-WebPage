@@ -17,6 +17,7 @@ function resetForm() {
 
 
 document.querySelector('.hamburger-button').addEventListener('click', function () {
+    console.log('klik!');
     document.querySelector('.nav-links').style.display =
         (document.querySelector('.nav-links').style.display == 'none') ? 'block' : 'none';
 });
@@ -27,11 +28,13 @@ function updateZegar() {
     var today = new Date();
     var hours = today.getHours();
     var minutes = today.getMinutes();
+    if(minutes < 10) minutes = "0" + minutes;
     var seconds = today.getSeconds();
+    if(seconds < 10) seconds = "0" + seconds;
 
-    var timeStringPL = "Warszawa godzina: " + hours + ":" + minutes + ":" + seconds;
+    var timeStringPL = "Warszawa | " + hours + ":" + minutes + ":" + seconds;
 
-    document.getElementById("clockPL").innerText = timeStringPL
+    if(document.getElementById("clockPL") != null) document.getElementById("clockPL").innerText = timeStringPL
 
 }
 
@@ -39,11 +42,13 @@ function updateClock() {
     var today = new Date();
     var hours = today.getHours();
     var minutes = today.getMinutes();
+    if(minutes < 10) minutes = "0" + minutes;
     var seconds = today.getSeconds();
+    if(seconds < 10) seconds = "0" + seconds;
 
-    var timeStringENG = "Warsaw time: " + hours + ":" + minutes + ":" + seconds;
+    var timeStringENG = "Warsaw | " + hours + ":" + minutes + ":" + seconds;
 
-    document.getElementById("clockENG").innerText = timeStringENG;
+    if(document.getElementById("clockENG") != null) document.getElementById("clockENG").innerText = timeStringENG;
 }
 
 setInterval(updateClock, 1000);
