@@ -74,7 +74,7 @@ header {
 .form-container {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 130px;
+    margin-top: 2%;
 }
 
 /* Text upon fields */
@@ -100,7 +100,7 @@ form input[type="tel"]:hover {
 /* Submit button - container*/
 .submit-container {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
 }
 
 /* Submit button */
@@ -160,7 +160,7 @@ form {
     background-color: #e0e0e0;
 }
 
-footer {
+/* footer {
     background-color: #00BFFF;
     display: flex;
     justify-content: space-between;
@@ -168,7 +168,21 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    margin-top: 150px;
+    z-index: 10;
+} */
+
+footer {
+    background-color: #00BFFF;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
 }
+
+
+
 
 .clock {
     font-size: 25px;
@@ -208,7 +222,7 @@ section h1 {
 }
 
 .choose {
-    margin: 130px 0 0 0;
+    margin: 5% 0 0 0;
     justify-content: space-evenly;
     display: flex;
     font-size: 40px;
@@ -245,6 +259,10 @@ section h1 {
 .about-us {
     flex-basis: 30%;
     justify-content: left;
+}
+
+.g-recaptcha {
+    margin-top: 20px;
 }
 
 
