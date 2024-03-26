@@ -7,30 +7,19 @@
     <title>KBOX - 📦</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="icon" href="images/kpost_main.png">
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
     <header>
-        <a href="index.html">
-            <img class="logo" src="images/kpost_main.png" alt="kbox logo">
-        </a>
-        <a href="nadaj.html">
-            <img class="polish-flag" src="images/polish_button.png" alt="Polish flag">
-        </a>
-
-        <a href="send.html">
-            <img class="english-flag" src="images/english_button.png" alt="UK flag">
-        </a>
-        <div id="hamburger-menu">
-            <button class="hamburger-button"> ☰ </button>
-            <script src="script.js"></script>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="nadaj.html">Nadaj paczkę</a>
-                <a href="odbierz.html">Odbierz paczkę</a>
-            </div>
-        </div>
+        <nav class="navbar">
+            <img class="logo" src="images/kpost_main.png" alt="kpost logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="polish.html">Nadaj paczkę</a></li>
+                <li><a href="x">Odbierz paczkę</a></li>
+                <li><a href="x"></a></li>
+            </ul>
+        </nav>
     </header>
     <div class="form-container">
         <div class="keyboard">
@@ -45,33 +34,30 @@
             <button type="button" onclick="addToInput('3')">3</button>
             <button type="button" onclick="addToInput('0')">0</button>
             <button type="button" onclick="resetForm()">Reset</button>
-            <button type="button" onclick="backspaceForm()">Backspace</button>
             <script src="script.js"></script>
         </div>
         <form>
             <div>
-                <label for="school_id">Numer legitymacji:<br></label>
-                <input type="tel" id="school_id" name="school_id" required minlength="5" maxlength="5" size="5">
+                <label for="phone_number">Phone number:<br></label>
+                <input type="tel" id="phone_number" name="phone_number" required minlength="9" maxlength="9" size="9">
             </div>
 
             <br>
 
             <div>
-                <label for="tracking_number">Numer przesyłki:<br></label>
+                <label for="tracking_number">Tracking number:<br></label>
                 <input type="tel" id="tracking_number" name="tracking_number" required minlength="9" maxlength="9"
                     size="9">
             </div>
 
             <div class="submit-container">
-                <div class="g-recaptcha" data-sitekey="6LdOFJwpAAAAAK6Lnacp1MI52mmZOoh86fQGjhQE"></div>
                 <input type="submit" value="submit" />
             </div>
         </form>
     </div>
     <footer>
-        <img class="kasprzak-logo" src="images/kasprzak-logo.jpg" alt="kasprzak-logo">
         <div class="clock">
-            <h3 id="clockPL"></h3>
+            <h3 id="clock"></h3>
             <script src="script.js"></script>
         </div>
     </footer>

@@ -139,12 +139,19 @@ form {
     margin: 20px 10px 20px 20px;
 }
 
-.keyboard button:nth-child(11) {
+/* .keyboard button:nth-child(11) {
     grid-column: span 2;
+} */
+
+.keyboard button:nth-child(11)
+{
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.keyboard button:nth-child(11) {
-    font-size: 50px;
+.keyboard button:nth-child(12) {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .keyboard button {
@@ -154,13 +161,14 @@ form {
     border: 1.5px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
+    text-align: center;
 }
 
 .keyboard button:hover {
     background-color: #e0e0e0;
 }
 
-/* footer {
+footer {
     background-color: #00BFFF;
     display: flex;
     justify-content: space-between;
@@ -169,20 +177,7 @@ form {
     bottom: 0;
     width: 100%;
     margin-top: 150px;
-    z-index: 10;
-} */
-
-footer {
-    background-color: #00BFFF;
-    width: 100%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    padding: 7px;
 }
-
-
-
 
 .clock {
     font-size: 25px;
