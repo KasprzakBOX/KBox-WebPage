@@ -101,6 +101,7 @@ form input[type="tel"]:hover {
 .submit-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* Submit button */
@@ -257,13 +258,14 @@ section h1 {
 }
 
 .g-recaptcha {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
 @media (max-width: 520px) {
     .form-container {
-        margin: 0px;
+        margin-left: 8px;
+        padding: 0px;
     }
 
     .form-container label {
@@ -271,7 +273,7 @@ section h1 {
     }
 
     .submit-container {
-        justify-content: center;
+        margin: 0 0 0 8px;
     }
 
     .keyboard {
@@ -301,5 +303,6 @@ section h1 {
         order: 1;
         text-align: center;
     }
+    
 
 }
